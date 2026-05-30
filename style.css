@@ -520,3 +520,108 @@ body {
   margin-top: 3rem;
   margin-bottom: 1rem;
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 900px) {
+  body {
+    padding: 0;
+  }
+  .wrapper {
+    min-height: 100vh;
+    height: auto;
+    border-radius: 0;
+    border: none;
+    padding: 1.5rem;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .account {
+    justify-content: center;
+  }
+  
+  /* Hero Section */
+  .hero {
+    flex-direction: column;
+  }
+  .bg-text {
+    font-size: 22vw;
+    top: 15%;
+    padding: 0 1rem;
+    text-align: center;
+    flex-direction: column;
+    gap: 0;
+  }
+  .model-img {
+    position: relative;
+    height: 50vh;
+    width: auto;
+    max-width: 100%;
+    margin-top: 10rem;
+    object-fit: contain;
+  }
+  .bottom-content {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .product {
+    width: 100%;
+  }
+  .product-card {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  /* Inner Pages */
+  .page-content {
+    padding: 0 0 2rem 0;
+  }
+  .page-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  .product-detail-layout,
+  .cart-layout,
+  .checkout-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .cart-table th, .cart-table td {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .cart-table thead {
+    display: none;
+  }
+  .cart-item-display {
+    margin-bottom: 1rem;
+    flex-direction: column;
+  }
+}
